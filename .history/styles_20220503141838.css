@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Hahmlet", serif;
+}
+
+header {
+  border: 3px solid #220901;
+  padding: 2em;
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Hahmlet", serif;
+}
+
+header {
+  border: 3px solid #220901;
+  padding: 0.5em;
+  font-size: 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  margin: 0.5rem 0;
+  gap: 0.5rem;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #941b0c;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  min-width: max-content;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid #f6aa1c;
+  padding: 0.5em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #2b9348;
+}
