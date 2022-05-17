@@ -14,7 +14,7 @@
     </header>
     <main>
         <aside>
-            <button id="openModalBtn" class="btn">추가</button>
+            <button id="openModalBtn">추가</button>
             <span>맥주</span>
             <span>샴페인</span>
             <span>레드와인</span>
@@ -54,12 +54,12 @@
         <form class="modal-content">
             <span class="close">X</span>
             <label for="name" class="label">이름</label>
-            <input id="name" type="text" placeholder="꼬냑" class="input" maxlength="6" required/>
+            <input id="name" type="text" placeholder="화이트와인" class="input" maxlength="10" required/>
             <label for="image" class="label">이미지</label>
-            <input id="imageURL" type="text" placeholder="URL" class="input" required />
-            <label for="description" class="label">내용</label>
-            <input id="description" type="text" placeholder="프랑스 꼬냑 지방에서 생산한대요" class="input" required />
-            <button type="submit" id="addItemBtn" class="btn">저장</button>
+            <input id="image" type="text" placeholder="URL" class="input" required />
+            <label for="content" class="label">내용</label>
+            <input id="content" type="text" placeholder="주로 청포도로 만든다네요." class="input" required />
+            <button type="submit" class="submit-button">저장</button>
         </form>
     </div>
 </body>

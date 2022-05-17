@@ -48,9 +48,8 @@ aside {
 }
 
 .btn:hover {
-  background-color: #f6aa1c;
-  border: 2px solid #f6aa1c;
-  color: white;
+  background-color: white;
+  color: #941b0c;
   cursor: pointer;
 }
 
@@ -72,7 +71,6 @@ aside {
   text-align: center;
   word-break: keep-all;
   height: fit-content;
-  min-height: 275px;
   border-radius: 4px;
   width: 10rem;
 }
@@ -80,71 +78,6 @@ aside {
 .card img {
   height: 200px;
   margin-bottom: 0.3em;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.modal.opened {
-  display: block;
-}
-
-.modal-content {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  min-width: 300px;
-  padding: 2em 1.5em 1.5em 1.5em;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border-radius: 4px;
-  font-size: 1.2rem;
-}
-
-.modal-content label,
-.modal-content input {
-  margin-bottom: 0.3rem;
-  font-size: 1.2rem;
-}
-
-.modal-content input {
-  padding: 0.3em;
-  border: 2px solid #941b0c;
-  outline: none;
-  border-radius: 4px;
-}
-
-.modal-content input:focus {
-  border: 2px solid #f6aa1c;
-}
-
-.modal-content .btn {
-  margin-top: 1em;
-}
-
-.close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0.5em 1.2em;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
@@ -163,4 +96,43 @@ aside {
   .card {
     background-color: #80b918;
   }
+}
+
+/* The Modal (background) */
+.modal {
+  /* display: none; Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: white;
+  margin: 20% auto; /* 15% from the top and centered */
+  padding: 0.5em;
+  border-radius: 4px;
+  width: 50%; /* Could be more or less, depending on screen size */
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  text-align: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
 }

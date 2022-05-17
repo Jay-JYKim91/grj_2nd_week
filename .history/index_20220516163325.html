@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>고량주 2주차</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./main.js" defer></script>
 </head>
 <body>
     <header>
@@ -14,7 +13,7 @@
     </header>
     <main>
         <aside>
-            <button id="openModalBtn" class="btn">추가</button>
+            <button id="openModalBtn">추가</button>
             <span>맥주</span>
             <span>샴페인</span>
             <span>레드와인</span>
@@ -53,13 +52,7 @@
     <div id="addItemModal" class="modal">
         <form class="modal-content">
             <span class="close">X</span>
-            <label for="name" class="label">이름</label>
-            <input id="name" type="text" placeholder="꼬냑" class="input" maxlength="6" required/>
-            <label for="image" class="label">이미지</label>
-            <input id="imageURL" type="text" placeholder="URL" class="input" required />
-            <label for="description" class="label">내용</label>
-            <input id="description" type="text" placeholder="프랑스 꼬냑 지방에서 생산한대요" class="input" required />
-            <button type="submit" id="addItemBtn" class="btn">저장</button>
+            <p>Some text in the Modal..</p>
         </form>
     </div>
 </body>
